@@ -20,7 +20,7 @@ const date = new Date();
 
 function fetchData(){
     let city = cityName.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     fetch(url).then(res => (res.json()))
     .then(data => displayData(data))
 }
@@ -36,7 +36,7 @@ function displayData(data){
     disMinTemp.innerHTML = Math.round(data.main.temp_min) + '<span class="sub">C</span>';
     const icon = data.weather[0].icon;
     const convImg = icon.slice(0,-1) + 'd';
-    disWeatherIcon.src = `http://openweathermap.org/img/wn/${convImg}.png`;
+    disWeatherIcon.src = `https://openweathermap.org/img/wn/${convImg}.png`;
     // disSunrise.innerHTML = ((((data.sys.sunrise / 1000) / 60) / 60) / 24) + ':' + (((data.sys.sunrise / 1000) / 60) / 60) / 60;
     // disSunset.innerHTML = ((((data.sys.sunset / 1000) / 60) / 60) / 24);
     // console.log(Math.floor((data.sys.sunrise / 1000) / 60) % 60);
