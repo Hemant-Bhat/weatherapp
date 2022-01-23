@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App by Hemant Bhat</title>
+    <link rel="stylesheet" href="css/style.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="asset/video.mp4">
+    </video>
+    <div class="container">
+        <div class="form">
+            <input type="text" id="city_name" autofocus>
+            <button id="get_city_data">GET</button>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div><img id="wc"></div>
+                <!-- <i class="fas fa-sun"></i> -->
+                <div>
+                    <h2 class="ln" id="city"></h2>
+                </div>
+                <div>
+                    <span id="date"></span>
+                    <span id="day"></span>
+                    <span id="year"></span>
+                </div>
+                <div class="wi">
+                    <div class="ct">
+                        <span id="ct"></span>
+                    </div>
+                    <div class="wt">
+                        <span id="wt"></span>
+                    </div>
+                    <div class="min-max">
+                        <div>
+                            Max : <span id="maxt"></span>
+                        </div>
+                        <div>
+                            Min : <span id="mint"></span>
+                        </div>
+                    </div>
+                    <div class="sun-details" style="display: none;">
+                        <div>
+                            Sunrise : <span id="sunr"></span>
+                        </div>
+                        <div>
+                            Sunset : <span id="suns"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icon">
+            <a href="https://www.instagram.com/hemant__bhat/" target="_blank" class="base-color"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/HemantBhat143/" target="_blank" class="base-color"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Hemant-Bhat" target="_blank" class="base-color"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hemant-bhat/" target="_blank" class="base-color"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
